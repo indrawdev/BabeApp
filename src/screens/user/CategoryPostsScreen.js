@@ -1,13 +1,14 @@
 import React from 'react'
 import { Button, StyleSheet, Text, View } from 'react-native'
 
-const PostDetailScreen = ({navigation}) => {
+const CategoryPostsScreen = ({navigation}) => {
     return (
         <View style={styles.screen}>
-            <Text>Post Detail Screen</Text>
+            <Text>Category Posts Screen</Text>
             <Button
-                title="Go To Category Posts"
-                onPress={() => navigation.navigate('CategoryPosts')} />
+                title="Categories"
+                onPress={() => navigation.navigate('Categories')}
+            />
         </View>
     )
 }
@@ -20,4 +21,6 @@ const styles = StyleSheet.create({
     }
 })
 
-export default PostDetailScreen
+export default CategoryPostsScreen
+
+

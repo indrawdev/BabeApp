@@ -9,6 +9,6 @@ const DashboardScreen = () => {
     )
 }
 
-export default DashboardScreen
-
 const styles = StyleSheet.create({})
+
+export default DashboardScreen

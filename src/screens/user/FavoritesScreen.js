@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const ChatScreen = () => {
+const FavoritesScreen = props => {
     return (
         <View>
             <Text></Text>
@@ -11,4 +11,4 @@ const ChatScreen = () => {
 
 const styles = StyleSheet.create({})
 
-export default ChatScreend
+export default FavoritesScreen

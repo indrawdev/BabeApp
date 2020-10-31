@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
+import AppNavigator from './navigation/AppNavigator'
 
-const App = () => {
+const fetchFonts = () => {
+  
+}
+
+const styles = StyleSheet.create({})
+
+export default function App() {
+
+  const [fontLoaded, setFontLoaded] = useState(false);
+
   return (
     <NavigationContainer>
-        <View>
-          <Text></Text>
-      </View>
+      <AppNavigator />
     </NavigationContainer>
   )
 }
-
-export default App
-
-const styles = StyleSheet.create({})
