@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const DashboardScreen = () => {
+const ResetPasswordScreen = () => {
     return (
         <View>
             <Text></Text>
@@ -11,4 +11,4 @@ const DashboardScreen = () => {
 
 const styles = StyleSheet.create({})
 
-export default DashboardScreen
+export default ResetPasswordScreen

@@ -1,10 +1,10 @@
 import React from 'react'
-import { Button, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 
-const PostDetailScreen = () => {
+const EditPostScreen = () => {
     return (
         <View style={styles.screen}>
-            <Text>Post Detail Screen</Text>
+            <Text>Edit Screen</Text>
         </View>
     )
 }
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default PostDetailScreen
+export default EditPostScreen

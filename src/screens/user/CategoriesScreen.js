@@ -1,24 +1,32 @@
 import React from 'react'
-import { Alert, Button, FlatList, StyleSheet, Text, View } from 'react-native'
-import { TouchableOpacity } from 'react-native-gesture-handler'
+import { TouchableOpacity, FlatList, StyleSheet, Text, View } from 'react-native'
+import { CommonActions } from '@react-navigation/native';
 
 import { CATEGORIES } from '../../data/dummy-data'
 
-const renderGridItem = (itemData) => { 
-    return (
-        <TouchableOpacity
-            onPress={() => { 
+const CategoriesScreen = ({ navigation }) => {
 
-            }}
-        >
-            <View style={styles.gridItem}> 
-                <Text>{itemData.item.title}</Text>
-            </View>
-        </TouchableOpacity>
-    )
-}
-
-const CategoriesScreen = () => {
+    const renderGridItem = (itemData) => { 
+        return (
+            <TouchableOpacity style={styles.gridItem}
+                onPress={() => { 
+                    navigation.dispatch(
+                        CommonActions.navigate({
+                            name: 'PostDetail',
+                            params: {
+                                categoryId: itemData.item.id
+                            }
+                        })
+                    )
+                }}
+            >
+                <View> 
+                    <Text>{itemData.item.title}</Text>
+                </View>
+            </TouchableOpacity>
+        )
+    }
+    
     return (
         <FlatList
             keyExtractor={(item, index) => item.id}

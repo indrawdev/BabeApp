@@ -7,9 +7,21 @@ import PostDetailScreen from '../screens/user/PostDetailScreen'
 
 const Stack = createStackNavigator();
 
+
 const AppNavigator = () => { 
     return (
-        <Stack.Navigator initialRouteName="Categories">
+        <Stack.Navigator
+            initialRouteName="Categories"
+            screenOptions={{
+                headerStyle: {
+                    backgroundColor: '#f4511e',
+                },
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                    fontWeight: 'bold',
+                },
+            }}
+        >
             <Stack.Screen
                 name="Categories"
                 component={CategoriesScreen}

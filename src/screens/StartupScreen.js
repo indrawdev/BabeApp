@@ -9,6 +9,6 @@ const StartupScreen = () => {
     )
 }
 
-export default StartupScreen
-
 const styles = StyleSheet.create({})
+
+export default StartupScreen
