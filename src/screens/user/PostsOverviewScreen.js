@@ -9,6 +9,8 @@ const PostsOverviewScreen = () => {
     )
 }
 
-export default PostsOverviewScreen
+const styles = StyleSheet.create({
+    
+})
 
-const styles = StyleSheet.create({})
+export default PostsOverviewScreen
