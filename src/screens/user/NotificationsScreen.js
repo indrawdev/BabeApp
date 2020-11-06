@@ -9,6 +9,6 @@ const NotificationsScreen = () => {
     )
 }
 
-export default NotificationsScreen
-
 const styles = StyleSheet.create({})
+
+export default NotificationsScreen
