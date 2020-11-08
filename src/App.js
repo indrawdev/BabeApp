@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet} from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
+
+
 import AppNavigator from './navigation/AppNavigator'
 import OwnerNavigator from './navigation/OwnerNavigator'
 import UserNavigator from './navigation/UserNavigator'
