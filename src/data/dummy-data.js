@@ -11,3 +11,7 @@ export const CATEGORIES = [
 export const POSTS = [
     new Post(1, 'Rumah Unik', 'Jl. Martadinata')
 ]
+
+export const CITIES = [
+    
+]

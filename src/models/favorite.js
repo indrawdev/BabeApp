@@ -1,8 +1,8 @@
 class Favorite {
-    constructor(id, title, color) {
+    constructor(id, postId, userId) {
         this.id = id;
-        this.title = title;
-        this.color = color;
+        this.postId = postId;
+        this.userId = userId;
     }
 }
 

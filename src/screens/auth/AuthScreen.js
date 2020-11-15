@@ -28,11 +28,11 @@ const formReducer = (state, action) => {
             updatedFormIsValid = updatedFormIsValid && updatedValidities[key]
         }
 
-        // return (
-        //     formIsValid: updatedFormIsValid,
-        //     inputValidities: updatedValidities,
-        //     inputValues: updatedValues
-        // )
+        return {
+            formIsValid: updatedFormIsValid,
+            inputValidities: updatedValidities,
+            inputValues: updatedValues
+        }
     }
     return state
 }
@@ -85,8 +85,10 @@ const AuthScreen = props => {
 
         try {
             await dispatch(action)
+            props.navigation.navigate('Home')
         } catch (err) {
             setError(err.message)
+            setIsLoading(false)
         }
 
         setIsLoading(false)

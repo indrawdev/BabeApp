@@ -14,9 +14,9 @@ const DrawerNavigator = () => {
     return (
         <Drawer.Navigator initialRouteName="Dashboard">
             <Drawer.Screen name="Dashboard" component={UserNavigator} />
-            <Drawer.Screen name="Favorites" component={FavoriteScreen} />
-            <Drawer.Screen name="Search" component={SearchScreen} />
-            <Drawer.Screen name="Profile" component={ProfileScreen} />
+            <Drawer.Screen name="Favorites" component={UserNavigator} />
+            <Drawer.Screen name="Search" component={UserNavigator} />
+            <Drawer.Screen name="Profile" component={UserNavigator} />
         </Drawer.Navigator>
     )
 }

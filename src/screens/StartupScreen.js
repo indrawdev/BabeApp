@@ -1,11 +1,33 @@
-import React from 'react'
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import React, { useEffect } from 'react'
+import { ActivityIndicator, StyleSheet, View } from 'react-native'
 
-const StartupScreen = () => {
+import Colors from '../constants/Colors'
+import { useDispatch } from 'react-redux'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+
+
+const StartupScreen = props => {
+
+    const dispatch = useDispatch()
+
+    useEffect(() => { 
+        const tryLogin = async () => { 
+            const userData = await AsyncStorage.getItem('userData')
+            if (!userData) {
+                props.navigation.navigate('Auth')
+                return
+            }
+
+            const transformedData = JSON.parse(userData)
+            const { token, userId, expiryDate } = transformedData
+        }
+        
+    }, [])
+
     return (
-        <SafeAreaView>
-
-        </SafeAreaView>
+        <View style={styles.screen}>
+            <ActivityIndicator size="large" color={Colors.primary} />
+        </View>
     )
 }
 

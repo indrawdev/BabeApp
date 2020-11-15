@@ -1,7 +1,7 @@
 class Image {
-    constructor(post, id, title) {
-        this.post = post;
+    constructor(id, postId, title) {
         this.id = id;
+        this.postId = postId;
         this.title = title;
     }
 }
