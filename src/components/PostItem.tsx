@@ -9,7 +9,7 @@ import {
     TouchableNativeFeedback
 } from 'react-native'
 
-import Card from '../components/UI/Card'
+import Card from './UI/Card'
 
 const PostItem = props => {
     let TouchableCmp = TouchableOpacity

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useReducer, useCallback } from 'react'
 import { StyleSheet, View, KeyboardAvoidingView, ScrollView, Button, Alert, ActivityIndicator } from 'react-native'
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import Input from '../../components/UI/Input'
 import Card from '../../components/UI/Card'

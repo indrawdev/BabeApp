@@ -2,20 +2,17 @@ import React, { useEffect } from 'react'
 import { ActivityIndicator, StyleSheet, View } from 'react-native'
 
 import Colors from '../constants/Colors'
-import { useDispatch } from 'react-redux'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
 
-const StartupScreen = props => {
-
-    const dispatch = useDispatch()
+const StartupScreen = () => {
 
     useEffect(() => { 
         const tryLogin = async () => { 
             const userData = await AsyncStorage.getItem('userData')
             if (!userData) {
-                props.navigation.navigate('Auth')
-                return
+                //props.navigation.navigate('Auth')
+                //return
             }
 
             const transformedData = JSON.parse(userData)

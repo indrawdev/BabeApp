@@ -8,10 +8,6 @@ import OwnerNavigator from './navigation/OwnerNavigator'
 import UserNavigator from './navigation/UserNavigator'
 import DrawerNavigator from './navigation/DrawerNavigator'
 
-const fetchFonts = () => {
-  
-}
-
 const styles = StyleSheet.create({})
 
 export default function App() {
